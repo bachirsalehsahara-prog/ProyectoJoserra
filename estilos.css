@@ -1,12 +1,10 @@
-* {
+
+body {
+    background-color: #f5f7fa;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Segoe UI", sans-serif;
-}
-
-body {
-    background-color: #f5f7fa;
 }
 
 /* LAYOUT PRINCIPAL */
@@ -118,3 +116,4 @@ body {
     font-weight: bold;
     color: #1e4ed8;
 }
+
