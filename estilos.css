@@ -117,3 +117,81 @@ body {
     color: #1e4ed8;
 }
 
+/*Cuestionarios*/
+/* TEXTO SECUNDARIO EN CARDS */
+.card-text {
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+}
+
+/* SECCIÓN TABLA */
+.table-section {
+    margin-top: 30px;
+}
+
+/* TABLA PERSONALIZADA */
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.custom-table th {
+    text-align: left;
+    padding: 12px 10px;
+    font-size: 14px;
+    color: #666;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.custom-table td {
+    padding: 12px 10px;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 14px;
+}
+
+.custom-table tr:hover {
+    background-color: #f9fbff;
+}
+
+/* BADGES DE ESTADO */
+.badge {
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.badge.completed {
+    background-color: #e6f7ed;
+    color: #1e7d4f;
+}
+
+.badge.pending {
+    background-color: #fff4e5;
+    color: #d97706;
+}
+
+/* ENLACES TABLA */
+.table-link {
+    text-decoration: none;
+    color: #1e4ed8;
+    font-weight: 500;
+}
+
+.table-link:hover {
+    text-decoration: underline;
+}
+
+/*servicios*/
+/* BADGES SERVICIOS */
+.badge.active {
+    background-color: #e8f0ff;
+    color: #1e4ed8;
+}
+
+.badge.finished {
+    background-color: #f3f4f6;
+    color: #555;
+}

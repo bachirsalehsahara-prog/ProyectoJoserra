@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Servicios - TECNOPYME CLM</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<div class="layout">
+
+    <aside class="sidebar">
+        <div class="logo">
+            <h2>TECNOPYME CLM</h2>
+            <span>Castilla-La Mancha</span>
+        </div>
+
+        <nav class="menu">
+            <a href="index.html">Dashboard</a>
+            <a href="empresa.html">Empresa</a>
+            <a href="usuarios.html">Usuarios</a>
+            <a href="cuestionarios.html">Cuestionarios</a>
+            <a href="servicios.html" class="active">Servicios</a>
+            <a href="cursos.html">Cursos</a>
+            <a href="soporte.html">Soporte</a>
+            <a href="ayudas.html">Ayudas</a>
+        </nav>
+    </aside>
+
+    <main class="main-content">
+
+        <header class="topbar">
+            <h3>Panel de Servicios</h3>
+            <div class="user">
+                <span>🔔</span>
+                <span>Bachir</span>
+            </div>
+        </header>
+
+        <section class="dashboard-header">
+            <h1>Servicios</h1>
+            <p>Gestiona los servicios digitales contratados por tu empresa</p>
+        </section>
+
+        <!-- RESUMEN -->
+        <section class="cards">
+            <div class="card">
+                <h4>Servicios Activos</h4>
+                <p class="number">3</p>
+                <p class="card-text">Actualmente en funcionamiento</p>
+            </div>
+
+            <div class="card">
+                <h4>Servicios Finalizados</h4>
+                <p class="number">2</p>
+                <p class="card-text">Completados correctamente</p>
+            </div>
+
+            <div class="card">
+                <h4>Próxima Renovación</h4>
+                <p class="number">15/04/2026</p>
+                <p class="card-text">Hosting Web</p>
+            </div>
+        </section>
+
+        <!-- LISTADO -->
+        <section class="card table-section">
+            <h4>Listado de Servicios</h4>
+
+            <table class="custom-table">
+                <thead>
+                    <tr>
+                        <th>Servicio</th>
+                        <th>Proveedor</th>
+                        <th>Estado</th>
+                        <th>Fecha Inicio</th>
+                        <th>Acción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Hosting Web</td>
+                        <td>CloudDigital</td>
+                        <td><span class="badge active">Activo</span></td>
+                        <td>10/01/2026</td>
+                        <td><a href="#" class="table-link">Gestionar</a></td>
+                    </tr>
+                    <tr>
+                        <td>CRM Empresarial</td>
+                        <td>SoftManage</td>
+                        <td><span class="badge active">Activo</span></td>
+                        <td>22/12/2025</td>
+                        <td><a href="#" class="table-link">Gestionar</a></td>
+                    </tr>
+                    <tr>
+                        <td>Auditoría SEO</td>
+                        <td>MarketingPro</td>
+                        <td><span class="badge finished">Finalizado</span></td>
+                        <td>05/09/2025</td>
+                        <td><a href="#" class="table-link">Ver Informe</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </section>
+
+    </main>
+
+</div>
+
+</body>
+</html>
