@@ -6,14 +6,14 @@ body {
     font-family: "Segoe UI", sans-serif;
 }
 
-/* LAYOUT PRINCIPAL */
+
 .layout {
     display: grid;
     grid-template-columns: 250px 1fr;
     height: 100vh;
 }
 
-/* SIDEBAR */
+
 .sidebar {
     background: #ffffff;
     border-right: 1px solid #e0e0e0;
@@ -62,13 +62,12 @@ body {
     font-weight: 600;
 }
 
-/* CONTENIDO */
 .main-content {
     padding: 30px;
     overflow-y: auto;
 }
 
-/* TOPBAR */
+
 .topbar {
     display: flex;
     justify-content: space-between;
@@ -81,7 +80,6 @@ body {
     align-items: center;
 }
 
-/* HEADER */
 .dashboard-header {
     margin: 20px 0 30px 0;
 }
@@ -91,7 +89,6 @@ body {
     margin-bottom: 5px;
 }
 
-/* CARDS GRID */
 .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -117,9 +114,6 @@ body {
     color: #1e4ed8;
 }
 
-/* ===== NUEVOS ESTILOS (para el diseño del Figma) ===== */
-
-/* Estilo para el icono de usuario en la topbar */
 .user-icon {
     background-color: #eef3fc;
     border-radius: 30px;
@@ -130,8 +124,6 @@ body {
     color: #1e4ed8;
     font-weight: 500;
 }
-
-/* Header de "Mi Empresa" (debajo del h1) */
 #empresa-header {
     display: flex;
     align-items: center;
@@ -155,7 +147,6 @@ body {
     margin-left: 4px;
 }
 
-/* Sección Información de la Empresa */
 #empresa-info-section {
     margin-top: 30px;
 }
@@ -167,7 +158,6 @@ body {
     margin-bottom: 20px;
 }
 
-/* Contenedor de la tabla */
 #empresa-tabla {
     background: #ffffff;
     border-radius: 16px;
@@ -175,7 +165,6 @@ body {
     overflow: hidden;
 }
 
-/* Filas de la tabla */
 .table-row {
     display: grid;
     grid-template-columns: 130px 1fr 100px 1fr;
@@ -186,7 +175,6 @@ body {
     border-bottom: none;
 }
 
-/* Celdas de etiqueta */
 .table-label {
     padding: 16px 20px;
     background-color: #f9fbfe;
@@ -195,13 +183,11 @@ body {
     border-right: 1px solid #e9edf4;
 }
 
-/* Las etiquetas de la segunda columna (CIF, Localidad, Teléfono) tienen borde izquierdo */
 .table-label + .table-label {
     border-left: 1px solid #e9edf4;
     border-right: none;
 }
 
-/* Celdas de valor */
 .table-value {
     padding: 16px 20px;
     background-color: #ffffff;
@@ -209,12 +195,11 @@ body {
     font-weight: 500;
 }
 
-/* Ajuste para que los valores de la segunda columna no tengan borde derecho */
 .table-value + .table-value {
     border-left: 1px solid #e9edf4;
 }
 
-/* Contenedor de la fecha de registro */
+
 #fecha-registro-container {
     margin-top: 18px;
     display: flex;
@@ -263,7 +248,6 @@ body {
     margin-left: 4px;
 }
 
-/* Sección de usuarios */
 #usuarios-section {
     margin-top: 30px;
 }
@@ -275,7 +259,7 @@ body {
     margin-bottom: 20px;
 }
 
-/* Contenedor de la tabla de usuarios */
+
 #usuarios-tabla {
     background: #ffffff;
     border-radius: 16px;
@@ -283,10 +267,9 @@ body {
     overflow: hidden;
 }
 
-/* Grid específico para las filas de la tabla de usuarios (4 columnas) */
 #usuarios-tabla .table-row {
     display: grid;
-    grid-template-columns: 1.5fr 2fr 1fr 0.8fr; /* Ajusta estos valores si es necesario */
+    grid-template-columns: 1.5fr 2fr 1fr 0.8fr;
     border-bottom: 1px solid #eef2f6;
 }
 
@@ -294,14 +277,12 @@ body {
     border-bottom: none;
 }
 
-/* Mantener el estilo de la cabecera (fondo gris) */
 #usuarios-tabla .table-header .table-label {
     background-color: #f9fbfe;
     font-weight: 600;
     color: #31435e;
 }
 
-/* Estilo para la columna de acciones (icono verde centrado) */
 #usuarios-tabla .acciones {
     display: flex;
     align-items: center;
@@ -313,7 +294,6 @@ body {
     font-size: 1.3rem;
 }
 
-/* Mensaje de cambio de idioma (similar al contenedor de fecha) */
 #idioma-mensaje {
     margin-top: 18px;
     display: flex;
