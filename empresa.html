@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TECNOPYME CLM · Dashboard</title>
+    <link rel="stylesheet" href="estilos2.css">
+</head>
+<body>
+    <div class="layout">
+        <aside class="sidebar" id="sidebar">
+            <div class="logo" id="logo">
+                <h2 id="logo-title">TECNOPYME CLM</h2>
+                <span id="logo-subtitle">Castilla-La Mancha</span>
+            </div>
+            <nav class="menu">
+            <a href="index.html">Dashboard</a>
+            <a href="empresa.html" class="active">Empresa</a>
+            <a href="usuarios.html">Usuarios</a>
+            <a href="cuestionarios.html">Cuestionarios</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="cursos.html">Cursos</a>
+            <a href="soporte.html">Soporte</a>
+            <a href="ayudas.html">Ayudas</a>
+        </nav>
+        </aside>
+
+        <main class="main-content" id="main-content">
+            <div class="topbar" id="topbar">
+                <div id="topbar-left"></div>
+                <div class="user" id="user-menu">
+                    <span class="user-icon" id="user-profile"><i class="fas fa-user-circle"></i> Admin</span>
+                </div>
+            </div>
+
+            <div class="dashboard-header" id="dashboard-header">
+                <h1 id="welcome-title">Bienvenido/a a TECNOPYME CLM</h1>
+                <div id="empresa-header">
+                    <i class="fas fa-briefcase" id="empresa-icon"></i>
+                    <span id="empresa-titulo">Mi Empresa</span>
+                    <span id="empresa-subtitulo">Gestiona la información de tu empresa</span>
+                </div>
+            </div>
+
+            <div class="cards" id="cards-dashboard">
+                <div class="card" id="card-ejemplo">
+                    <h4 id="card-title">Ejemplo Card</h4>
+                    <div class="number" id="card-number">0</div>
+                </div>
+            </div>
+
+            <section id="empresa-info-section">
+                <h3 id="empresa-info-titulo">📋 Información de la Empresa</h3>
+                
+                <div id="empresa-tabla">
+                    <div class="table-row" id="fila-nombre-cif">
+                        <div class="table-label" id="label-nombre">Nombre</div>
+                        <div class="table-value" id="valor-nombre">Industrias CLM S.L.</div>
+                        <div class="table-label" id="label-cif">CIF</div>
+                        <div class="table-value" id="valor-cif">B12345678</div>
+                    </div>
+                    
+                    <div class="table-row" id="fila-sector-localidad">
+                        <div class="table-label" id="label-sector">Sector</div>
+                        <div class="table-value" id="valor-sector">Manufactura</div>
+                        <div class="table-label" id="label-localidad">Localidad</div>
+                        <div class="table-value" id="valor-localidad">Toledo</div>
+                    </div>
+                    
+                    <div class="table-row" id="fila-email-telefono">
+                        <div class="table-label" id="label-email">Email</div>
+                        <div class="table-value" id="valor-email">contacto@industriasclm.es</div>
+                        <div class="table-label" id="label-telefono">Teléfono</div>
+                        <div class="table-value" id="valor-telefono">+34 925 123 456</div>
+                    </div>
+                </div>
+
+                <div id="fecha-registro-container">
+                    <i class="fas fa-calendar-alt" id="fecha-icono"></i>
+                    <span id="fecha-label">Fecha de Registro</span>
+                    <span id="fecha-valor">2024-01-15</span>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
