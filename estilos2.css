@@ -1,0 +1,335 @@
+body {
+    background-color: #f5f7fa;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+/* LAYOUT PRINCIPAL */
+.layout {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    height: 100vh;
+}
+
+/* SIDEBAR */
+.sidebar {
+    background: #ffffff;
+    border-right: 1px solid #e0e0e0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo h2 {
+    color: #1e4ed8;
+    font-size: 20px;
+    margin: 0 0 2px 0;
+}
+
+.logo span {
+    font-size: 13px;
+    color: #666;
+}
+
+.menu {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #444;
+    padding: 10px 12px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: 0.2s ease;
+}
+
+.menu a:hover {
+    background-color: #f0f4ff;
+    color: #1e4ed8;
+}
+
+.menu a.active {
+    background-color: #e8f0ff;
+    color: #1e4ed8;
+    font-weight: 600;
+}
+
+/* CONTENIDO */
+.main-content {
+    padding: 30px;
+    overflow-y: auto;
+}
+
+/* TOPBAR */
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topbar .user {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+/* HEADER */
+.dashboard-header {
+    margin: 20px 0 30px 0;
+}
+
+.dashboard-header h1 {
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+/* CARDS GRID */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.card h4 {
+    font-size: 15px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.card .number {
+    font-size: 28px;
+    font-weight: bold;
+    color: #1e4ed8;
+}
+
+/* ===== NUEVOS ESTILOS (para el diseño del Figma) ===== */
+
+/* Estilo para el icono de usuario en la topbar */
+.user-icon {
+    background-color: #eef3fc;
+    border-radius: 30px;
+    padding: 6px 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #1e4ed8;
+    font-weight: 500;
+}
+
+/* Header de "Mi Empresa" (debajo del h1) */
+#empresa-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 8px;
+}
+
+#empresa-icon {
+    color: #1e4ed8;
+    font-size: 1.2rem;
+}
+
+#empresa-titulo {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #1e4ed8;
+}
+
+#empresa-subtitulo {
+    color: #6b7a8f;
+    margin-left: 4px;
+}
+
+/* Sección Información de la Empresa */
+#empresa-info-section {
+    margin-top: 30px;
+}
+
+#empresa-info-titulo {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 20px;
+}
+
+/* Contenedor de la tabla */
+#empresa-tabla {
+    background: #ffffff;
+    border-radius: 16px;
+    border: 1px solid #e9edf4;
+    overflow: hidden;
+}
+
+/* Filas de la tabla */
+.table-row {
+    display: grid;
+    grid-template-columns: 130px 1fr 100px 1fr;
+    border-bottom: 1px solid #eef2f6;
+}
+
+.table-row:last-child {
+    border-bottom: none;
+}
+
+/* Celdas de etiqueta */
+.table-label {
+    padding: 16px 20px;
+    background-color: #f9fbfe;
+    font-weight: 600;
+    color: #31435e;
+    border-right: 1px solid #e9edf4;
+}
+
+/* Las etiquetas de la segunda columna (CIF, Localidad, Teléfono) tienen borde izquierdo */
+.table-label + .table-label {
+    border-left: 1px solid #e9edf4;
+    border-right: none;
+}
+
+/* Celdas de valor */
+.table-value {
+    padding: 16px 20px;
+    background-color: #ffffff;
+    color: #1e293b;
+    font-weight: 500;
+}
+
+/* Ajuste para que los valores de la segunda columna no tengan borde derecho */
+.table-value + .table-value {
+    border-left: 1px solid #e9edf4;
+}
+
+/* Contenedor de la fecha de registro */
+#fecha-registro-container {
+    margin-top: 18px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #ffffff;
+    padding: 14px 22px;
+    border-radius: 14px;
+    border: 1px solid #e9edf4;
+}
+
+#fecha-icono {
+    color: #1e4ed8;
+}
+
+#fecha-label {
+    font-weight: 600;
+    color: #31435e;
+}
+
+#fecha-valor {
+    color: #1e293b;
+    font-weight: 500;
+}
+
+#gestion-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 8px;
+}
+
+#gestion-icon {
+    color: #1e4ed8;
+    font-size: 1.2rem;
+}
+
+#gestion-titulo {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #1e4ed8;
+}
+
+#gestion-subtitulo {
+    color: #6b7a8f;
+    margin-left: 4px;
+}
+
+/* Sección de usuarios */
+#usuarios-section {
+    margin-top: 30px;
+}
+
+#usuarios-titulo {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 20px;
+}
+
+/* Contenedor de la tabla de usuarios */
+#usuarios-tabla {
+    background: #ffffff;
+    border-radius: 16px;
+    border: 1px solid #e9edf4;
+    overflow: hidden;
+}
+
+/* Grid específico para las filas de la tabla de usuarios (4 columnas) */
+#usuarios-tabla .table-row {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr 1fr 0.8fr; /* Ajusta estos valores si es necesario */
+    border-bottom: 1px solid #eef2f6;
+}
+
+#usuarios-tabla .table-row:last-child {
+    border-bottom: none;
+}
+
+/* Mantener el estilo de la cabecera (fondo gris) */
+#usuarios-tabla .table-header .table-label {
+    background-color: #f9fbfe;
+    font-weight: 600;
+    color: #31435e;
+}
+
+/* Estilo para la columna de acciones (icono verde centrado) */
+#usuarios-tabla .acciones {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#usuarios-tabla .acciones i {
+    color: #28a745;
+    font-size: 1.3rem;
+}
+
+/* Mensaje de cambio de idioma (similar al contenedor de fecha) */
+#idioma-mensaje {
+    margin-top: 18px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #ffffff;
+    padding: 14px 22px;
+    border-radius: 14px;
+    border: 1px solid #e9edf4;
+}
+
+#idioma-icono {
+    color: #1e4ed8;
+}
+
+#idioma-texto {
+    font-weight: 500;
+    color: #1e293b;
+}
