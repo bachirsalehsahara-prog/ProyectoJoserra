@@ -2,22 +2,22 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>TECNOPYME CLM</title>
-    <link rel="stylesheet" href="estilos.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TECNOPYME CLM · Dashboard</title>
+    <link rel="stylesheet" href="estilos3.css">
 </head>
 <body>
+    <div class="layout">
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+            <div class="logo">
+                <h2>TECNOPYME CLM</h2>
+                <span>Castilla-La Mancha</span>
+            </div>
 
-<div class="layout">
-
-    <aside class="sidebar">
-        <div class="logo">
-            <h2>TECNOPYME CLM</h2>
-            <span>Castilla-La Mancha</span>
-        </div>
-
-         <nav class="menu">
+           <nav class="menu">
             <a href="index.html" class="active">Dashboard</a>
-            <a href="empresa.html">Empresa</a>
+            <a href="empresa.html" >Empresa</a>
             <a href="usuarios.html">Usuarios</a>
             <a href="cuestionarios.html">Cuestionarios</a>
             <a href="servicios.html">Servicios</a>
@@ -25,123 +25,128 @@
             <a href="soporte.html">Soporte</a>
             <a href="ayudas.html">Ayudas</a>
         </nav>
-    </aside>
+        </aside>
 
-  
-    <main class="main-content">
+        <!-- MAIN CONTENT -->
+        <main class="main-content">
+            <!-- TOPBAR -->
+            <header class="topbar">
+                <h3>Bienvenido/a a TECNOPYME CLM</h3>
+                <div class="user">
+                    <span class="notification">🔔</span>
+                    <span class="user-name">JoserraPro</span>
+                </div>
+            </header>
 
-        <header class="topbar">
-            <h3>Bienvenido/a a TECNOPYME CLM</h3>
-            <div class="user">
-                <i class="fa-solid fa-bell"></i>
-                 <span>🔔</span>
-                <span>Bachir</span>
+            <!-- DASHBOARD HEADER -->
+            <section class="dashboard-header">
+                <h1>Dashboard</h1>
+                <p>Resumen general de tu actividad en TECNOPYME CLM</p>
+            </section>
 
-            </div>
-        </header>
+            <!-- CARDS SUPERIORES -->
+            <section class="cards-grid">
+                <div class="stat-card">
+                    <h4>Usuarios Registrados</h4>
+                    <div class="number">4</div>
+                </div>
+                <div class="stat-card">
+                    <h4>Servicios Contratados</h4>
+                    <div class="number">3</div>
+                </div>
+                <div class="stat-card">
+                    <h4>Cursos Activos</h4>
+                    <div class="number">2</div>
+                </div>
+                <div class="stat-card">
+                    <h4>Solicitudes de Ayuda</h4>
+                    <div class="number">2</div>
+                </div>
+                <div class="stat-card">
+                    <h4>Incidencias Soporte</h4>
+                    <div class="number">3</div>
+                </div>
+                <div class="stat-card">
+                    <h4>Nivel Digitalización</h4>
+                    <div class="number">65%</div>
+                </div>
+            </section>
 
-        <section class="dashboard-header">
-            <h1>Dashboard</h1>
-            <p>Resumen general de tu actividad en TECNOPYME CLM</p>
-        </section>
+            <!-- GRÁFICOS: PIE + BARRAS -->
+            <section class="charts-row">
+                <!-- GRÁFICO CIRCULAR -->
+                <div class="chart-panel">
+                    <h3>📊 Estado de Digitalización</h3>
+                    <div class="pie-wrapper">
+                        <div class="pie"></div>
+                        <div class="pie-legend">
+                            <div class="legend-item">
+                                <span class="legend-color blue"></span> Completado 65%
+                            </div>
+                            <div class="legend-item">
+                                <span class="legend-color gray"></span> Pendiente 35%
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-     
-        <section class="cards">
-            <div class="card">
-                <h4>Usuarios Registrados</h4>
-                <p class="number">4</p>
-            </div>
+                <!-- GRÁFICO DE BARRAS -->
+                <div class="chart-panel">
+                    <h3>📈 Actividad Mensual</h3>
+                    <div class="barchart-container">
+                        <div class="bar-group">
+                            <div class="bar-item">
+                                <div class="bar-fill" style="height: 100px;"></div>
+                                <span class="bar-label">Oct</span>
+                            </div>
+                            <div class="bar-item">
+                                <div class="bar-fill" style="height: 150px;"></div>
+                                <span class="bar-label">Nov</span>
+                            </div>
+                            <div class="bar-item">
+                                <div class="bar-fill" style="height: 200px;"></div>
+                                <span class="bar-label">Dic</span>
+                            </div>
+                            <div class="bar-item">
+                                <div class="bar-fill" style="height: 50px;"></div>
+                                <span class="bar-label">Ene</span>
+                            </div>
+                        </div>
+                        <div class="chart-legend">
+                            <span>■ Acciones realizadas</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-            <div class="card">
-                <h4>Servicios Contratados</h4>
-                <p class="number">3</p>
-            </div>
-
-            <div class="card">
-                <h4>Cursos Activos</h4>
-                <p class="number">2</p>
-            </div>
-
-            <div class="card">
-                <h4>Solicitudes de Ayuda</h4>
-                <p class="number">2</p>
-            </div>
-
-            <div class="card">
-                <h4>Incidencias de Soporte</h4>
-                <p class="number">3</p>
-            </div>
-
-            <div class="card">
-                <h4>Nivel de Digitalización</h4>
-                <p class="number">65%</p>
-            </div>
-        </section>
-
-    </main>
-</div>
-
-
-<div class="charts">
-
-   
-    <div class="chart-card">
-        <h3>Estado de Digitalización</h3>
-
-        <div class="pie-container">
-            <div class="pie"></div>
-            <div class="pie-label">
-                <span>Completado 65%</span>
-            </div>
-        </div>
+            <!-- ACTIVIDAD RECIENTE -->
+            <section class="recent-section">
+                <h3>📋 Actividad Reciente</h3>
+                <div class="activity-list">
+                    <div class="activity-item">
+                        <div class="dot"></div>
+                        <div>
+                            <p>Su solicitud de Kit Digital ha sido aprobada</p>
+                            <span>2025-01-28</span>
+                        </div>
+                    </div>
+                    <div class="activity-item">
+                        <div class="dot"></div>
+                        <div>
+                            <p>Nuevo curso disponible: Gestión de Redes Sociales</p>
+                            <span>2025-01-27</span>
+                        </div>
+                    </div>
+                    <div class="activity-item">
+                        <div class="dot"></div>
+                        <div>
+                            <p>Su incidencia #2 está en proceso</p>
+                            <span>2025-01-26</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
     </div>
-
-
-    <div class="chart-card">
-        <h3>Actividad Mensual</h3>
-
-        <div class="bar-chart">
-            <div class="bar" style="height: 120px;">Oct</div>
-            <div class="bar" style="height: 190px;">Nov</div>
-            <div class="bar" style="height: 150px;">Dic</div>
-            <div class="bar" style="height: 240px;">Ene</div>
-        </div>
-
-        <p class="legend">■ Acciones realizadas</p>
-    </div>
-
-</div>
-
-
-
-<div class="recent">
-    <h3>Actividad Reciente</h3>
-
-    <div class="activity-item">
-        <div class="dot"></div>
-        <div>
-            <p>Su solicitud de Kit Digital ha sido aprobada</p>
-            <span>2025-01-28</span>
-        </div>
-    </div>
-
-    <div class="activity-item">
-        <div class="dot"></div>
-        <div>
-            <p>Nuevo curso disponible: Gestión de Redes Sociales</p>
-            <span>2025-01-27</span>
-        </div>
-    </div>
-
-    <div class="activity-item">
-        <div class="dot"></div>
-        <div>
-            <p>Su incidencia #2 está en proceso</p>
-            <span>2025-01-26</span>
-        </div>
-    </div>
-</div>
-
-
 </body>
 </html>
