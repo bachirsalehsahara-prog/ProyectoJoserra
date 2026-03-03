@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TECNOPYME CLM · Usuarios</title>
+    <link rel="stylesheet" href="estilos2.css">
+</head>
+<body>
+    <div class="layout">
+
+        <aside class="sidebar" id="sidebar">
+            <div class="logo" id="logo">
+                <h2 id="logo-title">TECNOPYME CLM</h2>
+                <span id="logo-subtitle">Castilla-La Mancha</span>
+            </div>
+            <nav class="menu">
+            <a href="index.html">Dashboard</a>
+            <a href="empresa.html">Empresa</a>
+            <a href="usuarios.html" class="active">Usuarios</a>
+            <a href="cuestionarios.html">Cuestionarios</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="cursos.html">Cursos</a>
+            <a href="soporte.html">Soporte</a>
+            <a href="ayudas.html">Ayudas</a>
+        </nav>
+        </aside>
+
+        <main class="main-content" id="main-content">
+
+            <div class="topbar" id="topbar">
+                <div id="topbar-left"></div>
+                <div class="user" id="user-menu">
+                    <span class="user-icon" id="user-profile">
+                        <i class="fas fa-user-circle"></i> Admin
+                    </span>
+                </div>
+            </div>
+
+            <div class="dashboard-header" id="dashboard-header">
+                <h1 id="welcome-title">Bienvenido/a a TECNOPYME CLM</h1>
+                <div id="gestion-header">
+                    <i class="fas fa-users-cog" id="gestion-icon"></i>
+                    <span id="gestion-titulo">Gestión de Usuarios</span>
+                    <span id="gestion-subtitulo">Administra los usuarios de tu empresa.</span>
+                </div>
+            </div>
+
+            <section id="usuarios-section">
+                <h3 id="usuarios-titulo">👥 Usuarios de la Empresa</h3>
+
+                <div id="usuarios-tabla">
+                    <div class="table-row table-header" id="tabla-header">
+                        <div class="table-label">Nombre</div>
+                        <div class="table-label">Email</div>
+                        <div class="table-label">Rol</div>
+                        <div class="table-label">Acciones</div>
+                    </div>
+
+                    <div class="table-row" id="fila-maria">
+                        <div class="table-value">María García</div>
+                        <div class="table-value">maria@industriasclm.es</div>
+                        <div class="table-value">Empresario</div>
+                        <div class="table-value acciones">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </div>
+
+                    <div class="table-row" id="fila-juan">
+                        <div class="table-value">Juan Pérez</div>
+                        <div class="table-value">juan@industriasclm.es</div>
+                        <div class="table-value">Empleado</div>
+                        <div class="table-value acciones">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </div>
+
+                    <div class="table-row" id="fila-ana">
+                        <div class="table-value">Ana Martínez</div>
+                        <div class="table-value">ana@industriasclm.es</div>
+                        <div class="table-value">Técnico</div>
+                        <div class="table-value acciones">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </div>
+
+                    <div class="table-row" id="fila-carlos">
+                        <div class="table-value">Carlos López</div>
+                        <div class="table-value">carlos@industriasclm.es</div>
+                        <div class="table-value">Empleado</div>
+                        <div class="table-value acciones">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="idioma-mensaje">
+                    <i class="fas fa-language" id="idioma-icono"></i>
+                    <span id="idioma-texto">Cambia tu idioma en cualquier momento desde el menú de ayuda</span>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
