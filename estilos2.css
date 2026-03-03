@@ -1,3 +1,4 @@
+/* ===== ESTILOS BASE (TU CÓDIGO) ===== */
 body {
     background-color: #f5f7fa;
     margin: 0;
@@ -6,15 +7,13 @@ body {
     font-family: "Segoe UI", sans-serif;
 }
 
-
-.layout {
+.pagina {
     display: grid;
     grid-template-columns: 250px 1fr;
     height: 100vh;
 }
 
-
-.sidebar {
+.barra-lateral {
     background: #ffffff;
     border-right: 1px solid #e0e0e0;
     padding: 20px;
@@ -56,65 +55,30 @@ body {
     color: #1e4ed8;
 }
 
-.menu a.active {
+.menu a.activo {
     background-color: #e8f0ff;
     color: #1e4ed8;
     font-weight: 600;
 }
 
-.main-content {
+.contenido-principal {
     padding: 30px;
     overflow-y: auto;
 }
 
-
-.topbar {
+.barra-superior {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.topbar .user {
+.barra-superior .usuario {
     display: flex;
     gap: 15px;
     align-items: center;
 }
 
-.dashboard-header {
-    margin: 20px 0 30px 0;
-}
-
-.dashboard-header h1 {
-    font-size: 28px;
-    margin-bottom: 5px;
-}
-
-.cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-}
-
-.card {
-    background: #ffffff;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-}
-
-.card h4 {
-    font-size: 15px;
-    color: #666;
-    margin-bottom: 10px;
-}
-
-.card .number {
-    font-size: 28px;
-    font-weight: bold;
-    color: #1e4ed8;
-}
-
-.user-icon {
+.icono-usuario {
     background-color: #eef3fc;
     border-radius: 30px;
     padding: 6px 12px;
@@ -124,58 +88,68 @@ body {
     color: #1e4ed8;
     font-weight: 500;
 }
-#empresa-header {
+
+.cabecera {
+    margin: 20px 0 30px 0;
+}
+
+.cabecera h1 {
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.mi-empresa {
     display: flex;
     align-items: center;
     gap: 10px;
     margin-top: 8px;
 }
 
-#empresa-icon {
+.mi-empresa i {
     color: #1e4ed8;
     font-size: 1.2rem;
 }
 
-#empresa-titulo {
+.mi-empresa .titulo {
     font-size: 1.2rem;
     font-weight: 500;
     color: #1e4ed8;
 }
 
-#empresa-subtitulo {
+.mi-empresa .subtitulo {
     color: #6b7a8f;
     margin-left: 4px;
 }
 
-#empresa-info-section {
+.seccion-info {
     margin-top: 30px;
 }
 
-#empresa-info-titulo {
+.seccion-info h3 {
     font-size: 1.3rem;
     font-weight: 600;
     color: #1e293b;
     margin-bottom: 20px;
 }
 
-#empresa-tabla {
+.tabla-info {
     background: #ffffff;
     border-radius: 16px;
     border: 1px solid #e9edf4;
     overflow: hidden;
 }
 
-.table-row {
+.fila {
     display: grid;
     grid-template-columns: 130px 1fr 100px 1fr;
     border-bottom: 1px solid #eef2f6;
 }
 
-.table-row:last-child {
+.fila:last-child {
     border-bottom: none;
 }
 
-.table-label {
+.etiqueta {
     padding: 16px 20px;
     background-color: #f9fbfe;
     font-weight: 600;
@@ -183,24 +157,23 @@ body {
     border-right: 1px solid #e9edf4;
 }
 
-.table-label + .table-label {
+.etiqueta + .etiqueta {
     border-left: 1px solid #e9edf4;
     border-right: none;
 }
 
-.table-value {
+.valor {
     padding: 16px 20px;
     background-color: #ffffff;
     color: #1e293b;
     font-weight: 500;
 }
 
-.table-value + .table-value {
+.valor + .valor {
     border-left: 1px solid #e9edf4;
 }
 
-
-#fecha-registro-container {
+.fecha-registro {
     margin-top: 18px;
     display: flex;
     align-items: center;
@@ -211,90 +184,116 @@ body {
     border: 1px solid #e9edf4;
 }
 
-#fecha-icono {
+.fecha-registro i {
     color: #1e4ed8;
 }
 
-#fecha-label {
+.fecha-registro .label {
     font-weight: 600;
     color: #31435e;
 }
 
-#fecha-valor {
+.fecha-registro .fecha {
     color: #1e293b;
     font-weight: 500;
 }
 
-#gestion-header {
+/* ===== NUEVOS ESTILOS PARA LA PÁGINA DE USUARIOS ===== */
+
+/* Cabecera de gestión de usuarios (similar a mi-empresa) */
+.gestion-usuarios {
     display: flex;
     align-items: center;
     gap: 10px;
     margin-top: 8px;
 }
 
-#gestion-icon {
+.gestion-usuarios i {
     color: #1e4ed8;
     font-size: 1.2rem;
 }
 
-#gestion-titulo {
+.gestion-usuarios .titulo {
     font-size: 1.2rem;
     font-weight: 500;
     color: #1e4ed8;
 }
 
-#gestion-subtitulo {
+.gestion-usuarios .subtitulo {
     color: #6b7a8f;
     margin-left: 4px;
 }
 
-#usuarios-section {
+/* Sección de usuarios */
+.seccion-usuarios {
     margin-top: 30px;
 }
 
-#usuarios-titulo {
+.seccion-usuarios h3 {
     font-size: 1.3rem;
     font-weight: 600;
     color: #1e293b;
     margin-bottom: 20px;
 }
 
-
-#usuarios-tabla {
+/* Tabla de usuarios */
+.tabla-usuarios {
     background: #ffffff;
     border-radius: 16px;
     border: 1px solid #e9edf4;
     overflow: hidden;
 }
 
-#usuarios-tabla .table-row {
+.tabla-usuarios .fila {
     display: grid;
-    grid-template-columns: 1.5fr 2fr 1fr 0.8fr;
+    grid-template-columns: 1.5fr 2fr 1fr 0.8fr; /* Ajusta según contenido */
     border-bottom: 1px solid #eef2f6;
 }
 
-#usuarios-tabla .table-row:last-child {
+.tabla-usuarios .fila:last-child {
     border-bottom: none;
 }
 
-#usuarios-tabla .table-header .table-label {
+/* Estilo para la fila de encabezado */
+.tabla-usuarios .fila.encabezado .celda {
     background-color: #f9fbfe;
     font-weight: 600;
     color: #31435e;
 }
 
-#usuarios-tabla .acciones {
+/* Celdas genéricas de la tabla */
+.tabla-usuarios .celda {
+    padding: 16px 20px;
+    background-color: #ffffff;
+    color: #1e293b;
+    font-weight: 500;
+    border-right: 1px solid #e9edf4;
+}
+
+.tabla-usuarios .celda:last-child {
+    border-right: none;
+}
+
+/* Para mantener bordes verticales entre celdas (alternativa a .celda + .celda) */
+.tabla-usuarios .celda + .celda {
+    border-left: 1px solid #e9edf4;
+    border-right: none;
+}
+
+/* Columna de acciones */
+.tabla-usuarios .acciones {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-#usuarios-tabla .acciones i {
+.tabla-usuarios .acciones i {
     color: #28a745;
     font-size: 1.3rem;
 }
 
-#idioma-mensaje {
+/* Mensaje de idioma (similar a fecha-registro) */
+.mensaje-idioma {
     margin-top: 18px;
     display: flex;
     align-items: center;
@@ -305,11 +304,90 @@ body {
     border: 1px solid #e9edf4;
 }
 
-#idioma-icono {
+.mensaje-idioma i {
     color: #1e4ed8;
 }
 
-#idioma-texto {
+.mensaje-idioma span {
     font-weight: 500;
     color: #1e293b;
+}
+
+/* ===== ESTILOS DE CUESTIONARIOS Y SERVICIOS (MANTENIDOS) ===== */
+
+/* TEXTO SECUNDARIO EN CARDS */
+.card-text {
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+}
+
+/* SECCIÓN TABLA */
+.table-section {
+    margin-top: 30px;
+}
+
+/* TABLA PERSONALIZADA */
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.custom-table th {
+    text-align: left;
+    padding: 12px 10px;
+    font-size: 14px;
+    color: #666;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.custom-table td {
+    padding: 12px 10px;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 14px;
+}
+
+.custom-table tr:hover {
+    background-color: #f9fbff;
+}
+
+/* BADGES DE ESTADO */
+.badge {
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.badge.completed {
+    background-color: #e6f7ed;
+    color: #1e7d4f;
+}
+
+.badge.pending {
+    background-color: #fff4e5;
+    color: #d97706;
+}
+
+/* ENLACES TABLA */
+.table-link {
+    text-decoration: none;
+    color: #1e4ed8;
+    font-weight: 500;
+}
+
+.table-link:hover {
+    text-decoration: underline;
+}
+
+/* BADGES SERVICIOS */
+.badge.active {
+    background-color: #e8f0ff;
+    color: #1e4ed8;
+}
+
+.badge.finished {
+    background-color: #f3f4f6;
+    color: #555;
 }
