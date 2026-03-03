@@ -1,4 +1,3 @@
-/* ===== ESTILOS BASE (TU CÓDIGO) ===== */
 body {
     background-color: #f5f7fa;
     margin: 0;
@@ -198,9 +197,6 @@ body {
     font-weight: 500;
 }
 
-/* ===== NUEVOS ESTILOS PARA LA PÁGINA DE USUARIOS ===== */
-
-/* Cabecera de gestión de usuarios (similar a mi-empresa) */
 .gestion-usuarios {
     display: flex;
     align-items: center;
@@ -224,7 +220,6 @@ body {
     margin-left: 4px;
 }
 
-/* Sección de usuarios */
 .seccion-usuarios {
     margin-top: 30px;
 }
@@ -236,7 +231,6 @@ body {
     margin-bottom: 20px;
 }
 
-/* Tabla de usuarios */
 .tabla-usuarios {
     background: #ffffff;
     border-radius: 16px;
@@ -254,14 +248,12 @@ body {
     border-bottom: none;
 }
 
-/* Estilo para la fila de encabezado */
 .tabla-usuarios .fila.encabezado .celda {
     background-color: #f9fbfe;
     font-weight: 600;
     color: #31435e;
 }
 
-/* Celdas genéricas de la tabla */
 .tabla-usuarios .celda {
     padding: 16px 20px;
     background-color: #ffffff;
@@ -274,13 +266,11 @@ body {
     border-right: none;
 }
 
-/* Para mantener bordes verticales entre celdas (alternativa a .celda + .celda) */
 .tabla-usuarios .celda + .celda {
     border-left: 1px solid #e9edf4;
     border-right: none;
 }
 
-/* Columna de acciones */
 .tabla-usuarios .acciones {
     display: flex;
     align-items: center;
@@ -292,7 +282,6 @@ body {
     font-size: 1.3rem;
 }
 
-/* Mensaje de idioma (similar a fecha-registro) */
 .mensaje-idioma {
     margin-top: 18px;
     display: flex;
@@ -313,21 +302,16 @@ body {
     color: #1e293b;
 }
 
-/* ===== ESTILOS DE CUESTIONARIOS Y SERVICIOS (MANTENIDOS) ===== */
-
-/* TEXTO SECUNDARIO EN CARDS */
 .card-text {
     font-size: 14px;
     color: #666;
     margin-top: 5px;
 }
 
-/* SECCIÓN TABLA */
 .table-section {
     margin-top: 30px;
 }
 
-/* TABLA PERSONALIZADA */
 .custom-table {
     width: 100%;
     border-collapse: collapse;
@@ -352,7 +336,6 @@ body {
     background-color: #f9fbff;
 }
 
-/* BADGES DE ESTADO */
 .badge {
     padding: 4px 10px;
     border-radius: 20px;
@@ -370,7 +353,6 @@ body {
     color: #d97706;
 }
 
-/* ENLACES TABLA */
 .table-link {
     text-decoration: none;
     color: #1e4ed8;
@@ -381,7 +363,6 @@ body {
     text-decoration: underline;
 }
 
-/* BADGES SERVICIOS */
 .badge.active {
     background-color: #e8f0ff;
     color: #1e4ed8;
