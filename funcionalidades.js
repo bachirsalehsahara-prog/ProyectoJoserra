@@ -32,7 +32,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 // Contador de caracteres para textarea
-// Contador mínimo para #soporteDesc
 document.addEventListener('DOMContentLoaded', function () {
   var ta = document.getElementById('soporteDesc');
   var counter = document.querySelector('.char-count');
