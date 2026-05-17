@@ -18,17 +18,18 @@ function togglePassword() {
 }
 
 // Confirmación antes de borrar
-function confirmDeletes() {
-  var items = document.querySelectorAll('.btn-delete, [data-confirm="true"]');
-  items.forEach(function (el) {
-    el.addEventListener('click', function (e) {
-      var msg = el.getAttribute('data-confirm-message') || '¿Estás seguro?';
+document.addEventListener('DOMContentLoaded', function () {
+  var items = document.querySelectorAll('.btn-delete');
+  items.forEach(function(elemento) {
+    elemento.addEventListener('click', function(e) {
+      var msg = elemento.getAttribute('data-confirm-message') || '¿Estás seguro?';
       if (!confirm(msg)) {
         e.preventDefault();
       }
     });
   });
-}
+});
+
 
 // Contador de caracteres para textarea
 function charCounters() {
