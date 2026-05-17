@@ -545,3 +545,29 @@ body {
 .curso-boton:active{
     background: #0d357f;
 }
+
+#soporteDesc{
+    width: 100%;
+    min-height: 120px;
+    padding: 10px;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    resize: vertical;
+    font-family: inherit;
+    outline: none;
+}
+
+#soporteDesc:focus{
+    border-color: #4f46e5;
+}
+
+label{
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+.char-count{
+    font-size: 12px;
+    color: #777;
+}
