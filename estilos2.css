@@ -240,7 +240,7 @@ body {
 
 .tabla-usuarios .fila {
     display: grid;
-    grid-template-columns: 1.5fr 2fr 1fr 0.8fr; /* Ajusta según contenido */
+    grid-template-columns: 1.5fr 2fr 1fr 0.8fr; /* Se ajusta según contenido */
     border-bottom: 1px solid #eef2f6;
 }
 
