@@ -32,29 +32,20 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 // Contador de caracteres para textarea
-function charCounters() {
-  var areas = document.querySelectorAll('textarea[data-charcount="true"]');
-  areas.forEach(function (ta) {
-    // busca un span justo después con clase .char-count
-    var counter = ta.nextElementSibling && ta.nextElementSibling.classList.contains('char-count')
-      ? ta.nextElementSibling
-      : null;
-    if (!counter) {
-      counter = document.createElement('span');
-      counter.className = 'char-count';
-      counter.style.marginLeft = '8px';
-      ta.parentNode.insertBefore(counter, ta.nextSibling);
-    }
-    var max = parseInt(ta.getAttribute('maxlength') || '0', 10) || 0;
-    function update() {
-      var len = ta.value.length;
-      counter.textContent = max > 0 ? len + ' / ' + max : len + ' caracteres';
-      counter.style.color = (max > 0 && len > max) ? '#b91c1c' : '';
-    }
-    ta.addEventListener('input', update);
-    update();
-  });
-}
+// Contador mínimo para #soporteDesc
+document.addEventListener('DOMContentLoaded', function () {
+  var ta = document.getElementById('soporteDesc');
+  var counter = document.querySelector('.char-count');
+  if (!ta || !counter) return;
+  var max = parseInt(ta.getAttribute('maxlength') || '0', 10) || 0;
+  function update() {
+    var len = ta.value.length;
+    counter.textContent = max ? len + ' / ' + max : len + ' caracteres';
+    counter.style.color = (max && len > max) ? 'red' : '';
+  }
+  ta.addEventListener('input', update);
+  update();
+});
 
 //No funcionaba y estuvimos probando cosas, al final consultamos la IA y nos dio esta solucion la 'DOMContentLoeaded'
 //Añadir el defer tambien en el enlace al js
