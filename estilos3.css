@@ -18,13 +18,12 @@ body {
 }
 
 
-.sidebar {
-    background: #ffffff;
-    border-right: 1px solid #e6e9f0;
-    padding: 28px 20px;
+.sidebar{
+    background: white;
+    padding: 20px;
     display: flex;
     flex-direction: column;
-    box-shadow: 2px 0 12px rgba(0,0,0,0.02);
+    border-right: 1px solid #e0e0e0;
 }
 
 .logo h2 {
