@@ -1,9 +1,9 @@
 
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Roboto, system-ui, sans-serif;
+    font-family: sans-serif;
 }
 
 body {
@@ -170,13 +170,12 @@ body {
     justify-content: center;
 }
 
-.pie {
+.pie{
     width: 180px;
     height: 180px;
     border-radius: 50%;
-    background: conic-gradient(#2b6cb0 0deg 234deg, #e2e8f0 234deg 360deg);
-    margin: 20px 0 10px;
-    box-shadow: 0 4px 12px rgba(0,40,100,0.1);
+    background: conic-gradient(#2b6cb0 0deg 234deg, #ddd 234deg 360deg);
+    margin: 20px auto;
 }
 
 .pie-legend {
@@ -263,11 +262,11 @@ body {
 }
 
 
-.recent-section {
+.recent-section{
     background: white;
-    border-radius: 24px;
-    padding: 28px 30px;
-    box-shadow: 0 8px 22px rgba(0,0,0,0.02);
+    border-radius: 20px;
+    padding: 20px;
+    border: 1px solid gray;
     margin-top: 10px;
 }
 
@@ -290,13 +289,13 @@ body {
     gap: 18px;
 }
 
-.dot {
+.dot{
     width: 12px;
     height: 12px;
     background-color: #1e4ed8;
     border-radius: 50%;
     margin-top: 6px;
-    box-shadow: 0 0 0 3px rgba(30,78,216,0.12);
+    border: 2px solid #cbd5e1;
 }
 
 .activity-item p {
@@ -312,15 +311,11 @@ body {
     font-weight: 500;
 }
 
-
-/*  */
-
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Roboto, system-ui, -apple-system, sans-serif;
+    font-family: Arial, sans-serif;
 }
 
 body {
@@ -335,13 +330,12 @@ body {
 }
 
 
-.sidebar {
-    background: #ffffff;
-    border-right: 1px solid #edf2f7;
-    padding: 32px 24px;
+.sidebar{
+    background: white;
+    padding: 20px;
     display: flex;
     flex-direction: column;
-    box-shadow: 4px 0 20px rgba(0, 0, 0, 0.02);
+    border-right: 1px solid #e5e5e5;
 }
 
 .logo h2 {
@@ -410,15 +404,14 @@ body {
     color: #0f1a2e;
 }
 
-.user {
+.user{
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 12px;
     background: white;
-    padding: 8px 20px 8px 16px;
-    border-radius: 40px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
-    border: 1px solid #f0f4f9;
+    padding: 10px 16px;
+    border-radius: 20px;
+    border: 1px solid #ddd;
 }
 
 .notification {
@@ -455,21 +448,18 @@ body {
 }
 
 
-.curso-card {
+.curso-card{
     background: white;
-    border-radius: 24px;
-    padding: 28px 32px;
+    padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
-    border: 1px solid #f0f4fa;
-    transition: all 0.2s ease;
+    border: 1px solid #ddd;
+    border-radius: 15px;
 }
 
-.curso-card:hover {
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.04);
-    border-color: #d9e6f2;
+.curso-card:hover{
+    border-color: #bbb;
 }
 
 .curso-info {
@@ -539,32 +529,20 @@ body {
     padding: 6px 0;
 }
 
-.curso-boton {
+.curso-boton{
     background: #1a4cbc;
     color: white;
     border: none;
-    padding: 14px 32px;
-    border-radius: 40px;
-    font-weight: 600;
-    font-size: 1rem;
+    padding: 12px 20px;
+    border-radius: 10px;
     cursor: pointer;
-    transition: all 0.2s ease;
-    white-space: nowrap;
-    box-shadow: 0 8px 16px rgba(26, 76, 188, 0.2);
-    margin-left: 24px;
-    border: 1px solid transparent;
+    margin-left: 20px;
 }
 
-.curso-boton:hover {
+.curso-boton:hover{
     background: #0f3a94;
-    transform: translateY(-2px);
-    box-shadow: 0 12px 24px rgba(26, 76, 188, 0.25);
 }
 
-.curso-boton:active {
-    transform: translateY(0);
-    box-shadow: 0 4px 12px rgba(26, 76, 188, 0.2);
+.curso-boton:active{
+    background: #0d357f;
 }
-
-
-/* ofidjd */
